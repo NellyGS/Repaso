@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Casas Favoritas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor = "let c of carrito">
+    <ion-row>
+        <ion-col>
+          <img [src] = c.foto>
+        </ion-col>
+        <ion-col>
+          <p>{{c.ciudad}}</p>
+          <p>{{c.colonia}}</p>
+          <p>{{c.precio}}</p>
+        </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

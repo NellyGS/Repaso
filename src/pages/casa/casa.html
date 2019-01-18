@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Información</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <img [src] = producto.foto>
+
+  <ion-card>
+    <h3>Ciudad: {{producto.ciudad}}</h3>
+    <h3>Colonia: {{producto.colonia}}</h3>
+    <h3>Precio: {{producto.precio}}</h3>
+    <h3>m² de terreno : {{producto.mterr}}</h3>
+    <h3>m² de construcción : {{producto.mcont}}</h3>
+    <h3>Sanitarios: {{producto.baos}}</h3>
+    <h3>Recamaras: {{producto.recama}}</h3>
+  </ion-card>
+
+  <button ion-button block color= "dark" style (click) = "agregar ()" >
+      <ion-icon name="thumbs-up"></ion-icon>
+  </button>
+  
+
+
+</ion-content>
